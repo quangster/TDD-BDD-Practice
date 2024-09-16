@@ -22,3 +22,21 @@ cover-package=triangle
 [coverage:report]
 show_missing = True
 ```
+
+## Test commands
+```bash
+# run tests
+python3 -m unitest
+# verbose mode
+python3 -m unitest -v 
+# nose
+nosetests -v
+# Nicer formatting and a colorful output
+nosetests --with-spec --spec-color
+# Test coverage
+nosetests --with-spec --spec-color --with-coverage
+# Coverage report
+coverage report -m
+# Save config for nosetests at setup.cfg file
+nosetests
+```
